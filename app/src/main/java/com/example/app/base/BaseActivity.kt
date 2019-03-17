@@ -5,8 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app.app.VooApplication
 import com.example.app.app.di.ApplicationComponent
+import com.example.app.base.viewModel.ViewModelFactory
+import javax.inject.Inject
 
 open class BaseActivity : AppCompatActivity(){
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelFactory
 
     private var isLandscape = false
 
