@@ -1,9 +1,9 @@
 package com.example.app
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.example.app.base.BaseActivity
 
-class VoosActivity : AppCompatActivity() {
+class VoosActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
