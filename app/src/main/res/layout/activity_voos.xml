@@ -4,6 +4,13 @@
         xmlns:tools="http://schemas.android.com/tools"
 >
 
+    <data>
+        <import type="android.view.View" />
+        <variable
+                name="viewModel"
+                type="com.example.app.VoosViewModel" />
+    </data>
+
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

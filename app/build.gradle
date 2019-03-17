@@ -15,7 +15,7 @@ android {
     }
     buildTypes {
         debug {
-            buildConfigField "String", "BASE_URL", "\"https://vcugj6hmt5.execute-api.us-east-1.amazonaws.com/hmg-search\""
+            buildConfigField "String", "BASE_URL", "\"https://vcugj6hmt5.execute-api.us-east-1.amazonaws.com/\""
         }
         release {
             minifyEnabled false
