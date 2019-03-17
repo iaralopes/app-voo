@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#e7edf3">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/partial_toolbar" />
+
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#d8dcde"
+                android:id="@+id/options_buttons"
+                android:layout_below="@+id/toolbar"
+        >
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    app:layout_widthPercent="49.7%"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+            >
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="VOO DE IDA"
+                        android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:layout_widthPercent="49.7%"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+            >
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="VOO DE VOLTA"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/container"
+                android:layout_below="@+id/options_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#d8dcde"
+        >
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    app:layout_widthPercent="49.7%"
+                    android:layout_height="match_parent"
+                    android:background="#1abc9c"
+            >
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:text="FILTRAR"
+                        android:textSize="15sp"
+                        android:textColor="#fff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:layout_widthPercent="49.7%"
+                    android:layout_height="match_parent"
+                    android:background="#1abc9c"
+            >
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="ORDENAR"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textColor="#fff"/>
+
+            </LinearLayout>
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
