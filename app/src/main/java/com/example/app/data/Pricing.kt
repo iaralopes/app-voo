@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class Pricing (
 
-    @SerializedName("ota") val ota : Ota,
+    @SerializedName("ota") val ota : Ota? = null,
     @SerializedName("airlineName") val airlineName : String,
     @SerializedName("isInternational") val isInternational : Boolean,
     @SerializedName("bestPriceAt") val bestPriceAt : String,

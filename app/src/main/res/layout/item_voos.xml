@@ -23,11 +23,13 @@
                     android:layout_marginTop="16dp"
                     android:orientation="vertical">
                 <TextView
+                        android:id="@+id/voo_departure_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:text="CNF"/>
                 <TextView
+                        android:id="@+id/voo_departure_hour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
@@ -41,11 +43,13 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginStart="10dp">
                 <TextView
+                        android:id="@+id/voo_arrival_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:text="GRU"/>
                 <TextView
+                        android:id="@+id/voo_arrival_hour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
@@ -54,13 +58,30 @@
 
 
         </LinearLayout>
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:layout_marginStart="19dp"
-                android:text="1h30, 1 parada"/>
 
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/voo_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="19dp"
+                    android:text="1h30"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text=", "/>
+            <TextView
+                    android:id="@+id/voo_stops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="1 parada"/>
+
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -71,6 +92,7 @@
             android:layout_alignParentEnd="true"
             android:gravity="end">
         <TextView
+                android:id="@+id/voo_sale_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
