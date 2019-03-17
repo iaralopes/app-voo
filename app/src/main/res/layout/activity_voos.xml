@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
         xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
 >
 
     <RelativeLayout
@@ -11,7 +12,7 @@
 
         <include
                 android:id="@+id/toolbar"
-                layout="@layout/partial_toolbar" />
+                layout="@layout/partial_toolbar"/>
 
 
         <androidx.percentlayout.widget.PercentRelativeLayout
@@ -59,12 +60,24 @@
 
         </androidx.percentlayout.widget.PercentRelativeLayout>
 
-        <LinearLayout
-                android:id="@+id/container"
+        <TextView
+                android:id="@+id/quantidade_voos"
                 android:layout_below="@+id/options_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="20dp"
+                android:text="Com filtro: 578 voos"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quantidade_voos"
+                android:layout_marginTop="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_voos"/>
+
 
         <androidx.percentlayout.widget.PercentRelativeLayout
                 android:layout_width="match_parent"
