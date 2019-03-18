@@ -5,10 +5,10 @@
 >
 
     <data>
-        <import type="android.view.View" />
+        <import type="android.view.View"/>
         <variable
                 name="viewModel"
-                type="com.example.app.core.voos.VoosViewModel" />
+                type="com.example.app.core.voos.VoosViewModel"/>
     </data>
 
     <RelativeLayout
@@ -65,26 +65,46 @@
                         android:text="VOO DE VOLTA"
                         android:textAlignment="center"
                         android:textSize="15sp"
-                        />
+                />
 
             </LinearLayout>
 
         </androidx.percentlayout.widget.PercentRelativeLayout>
 
-        <TextView
-                android:id="@+id/quantidade_voos"
+        <LinearLayout
+                android:id="@+id/info_voos"
                 android:layout_below="@+id/options_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="13dp"
-                android:layout_marginStart="20dp"
-                android:text="Com filtro: 578 voos"/>
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Com filtro: "/>
+
+            <TextView
+                    android:id="@+id/amount_voos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="@={viewModel.amountVoos}"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text=" voos"/>
+
+        </LinearLayout>
+
 
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/quantidade_voos"
+                android:layout_below="@+id/info_voos"
                 android:layout_marginTop="16dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_voos"/>

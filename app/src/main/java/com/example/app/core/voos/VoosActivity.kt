@@ -61,6 +61,7 @@ class VoosActivity : BaseActivity() {
                 voosBinding.recyclerView.adapter = voosAdapter
                 voosAdapter.notifyDataSetChanged()
 
+                voosViewModel.setAmountVoos(voosAdapter.list.size)
 
             }
             FlowState.Status.ERROR -> {
@@ -71,11 +72,13 @@ class VoosActivity : BaseActivity() {
     fun onClickOutboundVoos(view: View) {
         voosAdapter.list = VooMapper.parseOutboundListToAdaptedList(voosRemoteResult)
         voosAdapter.notifyDataSetChanged()
+        voosViewModel.setAmountVoos(voosAdapter.list.size)
     }
 
     fun onClickInboundVoos(view: View) {
         voosAdapter.list = VooMapper.parseInboundListToAdaptedList(voosRemoteResult)
         voosAdapter.notifyDataSetChanged()
+        voosViewModel.setAmountVoos(voosAdapter.list.size)
     }
 
     fun onClickOrdenation(view: View) {
