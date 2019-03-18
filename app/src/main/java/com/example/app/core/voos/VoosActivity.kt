@@ -52,8 +52,10 @@ class VoosActivity : BaseActivity() {
     private fun handleVoosState(state: FlowState<VoosResponse>) {
         when (state.status) {
             FlowState.Status.LOADING -> {
+                showProgress(true)
             }
             FlowState.Status.SUCCESS -> state.data?.let {
+                showProgress(false)
 
                 voosRemoteResult = it
 
