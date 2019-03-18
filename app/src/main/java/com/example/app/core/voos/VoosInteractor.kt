@@ -1,4 +1,4 @@
-package com.example.app
+package com.example.app.core.voos
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData

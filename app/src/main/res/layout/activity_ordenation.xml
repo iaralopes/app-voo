@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".core.ordenation.OrdenationActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/partial_toolbar" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="17dp"
+                android:textColor="#428abd"
+                android:textSize="14sp"
+                android:text="Ordenar"
+        />
+
+        <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="23dp"
+                android:checkedButton="@id/biggest_price_button"
+        >
+
+            <RadioButton
+                    android:id="@+id/biggest_price_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#879395"
+                    android:buttonTint="#1abc9c"
+                    android:text="Maior preço"/>
+
+            <RadioButton
+                    android:id="@+id/lowest_price_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#879395"
+                    android:buttonTint="#1abc9c"
+                    android:text="Menor preço"/>
+
+            <RadioButton
+                    android:id="@+id/lowest_price_shorter_time_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#879395"
+                    android:buttonTint="#1abc9c"
+                    android:text="Menor preço e menor tempo de voo"/>
+        </RadioGroup>
+
+                <Button
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="33dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Aplicar ordenação"
+                        android:textColor="#fff"
+                        android:background="#1abc9c"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:onClick="onClickOrdenation"
+                />
+
+    </LinearLayout>
+
+</layout>

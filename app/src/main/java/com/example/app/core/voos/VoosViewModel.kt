@@ -1,8 +1,9 @@
-package com.example.app
+package com.example.app.core.voos
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
+import com.example.app.core.voos.VoosInteractor
 import com.example.app.data.VoosResponse
 import com.example.app.utils.FlowState
 import javax.inject.Inject

@@ -8,7 +8,7 @@
         <import type="android.view.View" />
         <variable
                 name="viewModel"
-                type="com.example.app.VoosViewModel" />
+                type="com.example.app.core.voos.VoosViewModel" />
     </data>
 
     <RelativeLayout
@@ -121,6 +121,7 @@
                     app:layout_widthPercent="49.7%"
                     android:layout_height="match_parent"
                     android:background="#1abc9c"
+                    android:onClick="onClickOrdenation"
             >
 
                 <TextView
