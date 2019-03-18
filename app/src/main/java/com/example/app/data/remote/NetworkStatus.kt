@@ -1,4 +1,4 @@
-package com.example.app.data
+package com.example.app.data.remote
 
 import java.io.IOException
 import java.net.InetSocketAddress

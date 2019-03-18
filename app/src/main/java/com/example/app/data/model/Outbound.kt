@@ -1,8 +1,8 @@
-package com.example.app.data
+package com.example.app.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Inbound (
+data class Outbound (
 
     @SerializedName("stops") val stops : Int,
     @SerializedName("airline") val airline : String,

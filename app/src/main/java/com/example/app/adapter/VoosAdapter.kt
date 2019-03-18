@@ -5,9 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.app.R
-import com.example.app.data.Inbound
-import com.example.app.data.Pricing
-import com.example.app.data.Voo
+import com.example.app.data.model.Voo
 import kotlinx.android.synthetic.main.item_voos.view.*
 
 class VoosAdapter(

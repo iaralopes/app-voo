@@ -1,11 +1,10 @@
 package com.example.app.core.ordenation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.app.R
 import com.example.app.app.Constants.Extras.Companion.RESULT_ORDENATION_EXTRA_BUNDLE
-import com.example.app.base.BaseActivity
+import com.example.app.base.view.BaseActivity
 import kotlinx.android.synthetic.main.activity_ordenation.radio_group
 import kotlinx.android.synthetic.main.partial_toolbar.*
 

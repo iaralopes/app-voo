@@ -1,4 +1,6 @@
-package com.example.app.data
+package com.example.app.data.model
+
+import com.example.app.data.model.Pricing
 
 
 data class Voo (

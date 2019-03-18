@@ -8,10 +8,10 @@ import androidx.lifecycle.Observer
 import com.example.app.R
 import com.example.app.adapter.VoosAdapter
 import com.example.app.app.Constants.Extras.Companion.RESULT_ORDENATION_EXTRA_BUNDLE
-import com.example.app.base.BaseActivity
+import com.example.app.base.view.BaseActivity
 import com.example.app.core.ordenation.OrdenationActivity
 import com.example.app.core.ordenation.OrdenationVoosTypes
-import com.example.app.data.VoosResponse
+import com.example.app.data.model.VoosResponse
 import com.example.app.data.mapper.VooMapper
 import com.example.app.databinding.ActivityVoosBinding
 import com.example.app.extension.viewModel

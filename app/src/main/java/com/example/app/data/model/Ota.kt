@@ -1,5 +1,8 @@
-package com.example.app.data
+package com.example.app.data.model
 
+import com.example.app.data.model.Adult
+import com.example.app.data.model.Checkout
+import com.example.app.data.model.Luggage
 import com.google.gson.annotations.SerializedName
 
 data class Ota (

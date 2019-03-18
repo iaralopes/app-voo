@@ -1,5 +1,7 @@
-package com.example.app.data
+package com.example.app.data.model
 
+import com.example.app.data.model.Inbound
+import com.example.app.data.model.Outbound
 import com.google.gson.annotations.SerializedName
 
 class VoosResponse (

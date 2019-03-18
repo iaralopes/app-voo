@@ -2,11 +2,11 @@ package com.example.app.core.voos
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import com.example.app.data.RemoteRepository
+import com.example.app.data.remote.repository.RemoteRepository
 import com.example.app.utils.CoroutineContextProvider
 import com.example.app.utils.FlowState
 import com.example.app.data.Result
-import com.example.app.data.VoosResponse
+import com.example.app.data.model.VoosResponse
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject

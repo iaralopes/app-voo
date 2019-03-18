@@ -1,4 +1,4 @@
-package com.example.app.data
+package com.example.app.data.remote
 
 import okhttp3.Interceptor
 import okhttp3.Response

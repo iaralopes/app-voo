@@ -1,9 +1,9 @@
 package com.example.app.data.mapper
 
-import com.example.app.data.Inbound
-import com.example.app.data.Outbound
-import com.example.app.data.Voo
-import com.example.app.data.VoosResponse
+import com.example.app.data.model.Inbound
+import com.example.app.data.model.Outbound
+import com.example.app.data.model.Voo
+import com.example.app.data.model.VoosResponse
 
 object VooMapper {
 
@@ -18,7 +18,7 @@ object VooMapper {
     }
 
     fun parseInboundVooToAdaptedVoo(inboundVoo: Inbound): Voo {
-        return Voo (
+        return Voo(
             stops = inboundVoo.stops,
             duration = inboundVoo.duration,
             from = inboundVoo.from,
@@ -31,12 +31,12 @@ object VooMapper {
     }
 
     fun parseOutboundVooToAdaptedVoo(outboundVoo: Outbound): Voo {
-        return Voo (
+        return Voo(
             stops = outboundVoo.stops,
             duration = outboundVoo.duration,
             from = outboundVoo.from,
             departureDate = outboundVoo.departureDate,
-            arrivalDate =outboundVoo.arrivalDate,
+            arrivalDate = outboundVoo.arrivalDate,
             pricing = outboundVoo.pricing,
             direction = outboundVoo.direction,
             to = outboundVoo.to

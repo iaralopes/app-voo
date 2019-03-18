@@ -1,4 +1,4 @@
-package com.example.app.base
+package com.example.app.base.view
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle

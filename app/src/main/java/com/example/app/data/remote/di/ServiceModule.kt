@@ -1,6 +1,9 @@
-package com.example.app.data
+package com.example.app.data.remote.di
 
 import com.example.app.BuildConfig.BASE_URL
+import com.example.app.data.remote.AppVooService
+import com.example.app.data.remote.NetworkStatus
+import com.example.app.data.remote.RequestInterceptor
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides

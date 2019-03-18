@@ -1,5 +1,8 @@
-package com.example.app.data
+package com.example.app.data.remote.di
 
+import com.example.app.data.remote.AppVooService
+import com.example.app.data.remote.NetworkStatus
+import com.example.app.data.remote.repository.RemoteRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
