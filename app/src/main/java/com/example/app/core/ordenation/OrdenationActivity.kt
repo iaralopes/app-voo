@@ -5,13 +5,18 @@ import android.os.Bundle
 import android.view.View
 import com.example.app.R
 import com.example.app.app.Constants.Extras.Companion.RESULT_ORDENATION_EXTRA_BUNDLE
-import kotlinx.android.synthetic.main.activity_ordenation.*
+import com.example.app.base.BaseActivity
+import kotlinx.android.synthetic.main.activity_ordenation.radio_group
+import kotlinx.android.synthetic.main.partial_toolbar.*
 
-class OrdenationActivity : AppCompatActivity() {
+class OrdenationActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ordenation)
+
+        setUpToolbar(toolbar, "ORDENAÇÃO")
+
 
     }
 

@@ -16,6 +16,7 @@ import com.example.app.data.mapper.VooMapper
 import com.example.app.databinding.ActivityVoosBinding
 import com.example.app.extension.viewModel
 import com.example.app.utils.FlowState
+import kotlinx.android.synthetic.main.partial_toolbar.*
 
 class VoosActivity : BaseActivity() {
 
@@ -36,6 +37,8 @@ class VoosActivity : BaseActivity() {
         voosViewModel = viewModel(viewModelFactory)
         voosBinding = DataBindingUtil.setContentView(this, R.layout.activity_voos)
         voosBinding.viewModel = voosViewModel
+
+        setUpToolbar(toolbar, "VOOS")
 
         voosViewModel.getVoos()
         setObservableViewModel()
